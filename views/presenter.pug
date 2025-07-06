@@ -1,0 +1,30 @@
+include head
+body
+  section(class="intro")
+    h1 PRESENT YOUR SLIDES
+    p This means you'll be sharing your screen either in the room or on a video call.
+    p Paste the URL of your 
+      b Google Slides 
+      | presentation: 
+    p
+      input(type="text" id="presentationInit" autocomplete="off")
+    p
+      b Note: 
+      | No special permissions are required, and this app does not share the presentation or URL with anything outside of this page.
+    p
+      a(class="present" href="/") go back
+      
+  section(class="presenterScreen")
+    iframe(id="slideOdd" class="presentation")
+    iframe(id="slideEven" class="presentation invisible")
+
+  section(class="presenterControls")
+    a(href="/") QUIT
+    b 🔒 
+      span(class="roomCode")
+    input(type="text" class="presentationURL")
+    span(class="reset") 🔄
+    span(class="prev") ⏮
+    span(class="next") ⏭
+    
+  include javascript

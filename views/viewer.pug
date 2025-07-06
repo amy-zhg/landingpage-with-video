@@ -1,0 +1,17 @@
+include head
+body
+  section(class="intro")
+    h1(class="secondary") JOIN A PRESENTATION
+    p This means that you're going to hit the button that advances the slides!
+    p Enter the 4-digit room code to join a presentation.
+    p
+      input(type="text" id="inputRoomCode" autocomplete="off")
+    p
+      a(class="join" href="/") go back
+
+  section(class="viewerControls")
+    span(class="the-big-button next") Next slide, please!
+    p
+      a(class="quit" href="/") quit
+
+  include javascript
