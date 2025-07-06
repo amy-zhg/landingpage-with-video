@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400;1,800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400;1,800&display=swap');
+
+:root {
+  font-size: 150%;
+  --primary: #2077fa;
+  --primary-hover: #0066ff;
+  --secondary: #ffd447;
+  --secondary-hover: #ffc300;
+  --background: #ffffff;
+  --color: #000000;
+}
+
+body {
+  background: var(--background);
+  color: var(--color);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+iframe {
+  border: none;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  outline: none;
+  font-size: 1rem;
+}
+
+/* INTRO */
+.intro {
+  width: 666px;
+  max-width: 90vw;
+  margin: 2rem auto;
+}
+
+.intro h1 {
+  color: var(--primary);
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+}
+
+.intro .secondary {
+  color: var(--secondary);
+  text-align: right;
+}
+
+.intro .header p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.intro a {
+  font-size: 2rem;
+  font-weight: 800;
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: background ease .25s;
+}
+
+.intro .present {
+  text-align: left;
+  background: var(--primary);
+}
+
+.intro .present:hover {
+  background: var(--primary-hover);
+}
+
+.intro .join {
+  text-align: right;
+  background: var(--secondary);
+}
+
+.intro .join:hover {
+  background: var(--secondary-hover);
+}
+
+.intro .view-source {
+  background: var(--primary);
+}
+
+.intro .view-source:hover {
+  background: var(--primary-hover);
+}
+
+.intro input {
+  width: 95%;
+  font-size: 1.2rem;
+  padding: .5rem;
+  margin: 1rem auto;
+}
+
+/* PRESENTER */
+.presenterScreen {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 1.75rem;
+}
+
+.presenterControls {
+  color: #000000;
+  font-size: 1rem;
+  display: none;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0.3;
+}
+
+.presenterControls:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.presenterControls .next,
+.presenterControls .prev,
+.presenterControls .reset,
+.presenterControls a,
+.presenterControls b,
+.presenterControls input {
+  margin-left: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.presenterControls a {
+  background: #444444;
+  font-weight: 800;
+  padding: 0 1rem;
+  color: #ffffff;
+}
+
+.presenterControls a:hover {
+  background: var(--primary-hover);
+}
+
+.presenterControls input {
+  background: #111111;
+  color: #bebebe;
+}
+
+.presentation {
+  clear: both;
+  width: 100vw;
+}
+
+#slideEven {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* VIEWER */
+
+#inputRoomCode {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.viewerControls {
+  display: none;
+  width: 666px;
+  max-width: 90vw;
+  margin: 2rem auto;
+}
+
+.the-big-button {
+  cursor: pointer;
+  color: #ffffff;
+  background: var(--primary);
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3.2rem;
+  transition: background ease .25s;
+}
+
+.the-big-button:hover {
+  background: var(--primary-hover);
+}
+
+.viewerControls .quit {
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: block;
+  padding: 1rem 3rem;
+  margin: 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: var(--secondary);
+  transition: background ease .25s;
+}
+
+.viewerControls .quit:hover {
+  background: var(--secondary-hover);
+}
+
+@media only screen and (max-width: 666px) {
+  :root {
+    font-size: 120%;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+
+  .intro .header p {
+    font-size: 1.2rem;
+  }
+}
