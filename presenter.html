@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Next slide, please!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Three words you'll never have to say again." />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏭</text></svg>"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <section class="intro">
+      <h1>PRESENT YOUR SLIDES</h1>
+      <p>This means you'll be sharing your screen either in the room or on a video call.</p>
+      <p>
+        Paste the URL of your <b>Google Slides</b> presentation:
+      </p>
+      <p><input type="text" id="presentationInit" autocomplete="off" /></p>
+      <p>
+        <b>Note:</b> No special permissions are required, and this app does not share the presentation or URL with anything outside of this page.
+      </p>
+      <p><a class="present" href="/index.html">go back</a></p>
+    </section>
+
+    <section class="presenterScreen">
+      <iframe id="slideOdd" class="presentation"></iframe>
+      <iframe id="slideEven" class="presentation invisible"></iframe>
+    </section>
+
+    <section class="presenterControls">
+      <a href="/index.html">QUIT</a>
+      <b>🔒 <span class="roomCode"></span></b>
+      <input type="text" class="presentationURL" />
+      <span class="reset">🔄</span>
+      <span class="prev">⏮</span>
+      <span class="next">⏭</span>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/controls.js"></script>
+  </body>
+</html>
